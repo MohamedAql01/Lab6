@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<head>	
+	<title>Quiz</title>
+  <style>
+    body{ font: 14px Georgia, serif; }
+ 
+#page-wrap { width: 500px; margin: 0 auto;}
+ 
+h1  { margin: 25px 0; font: 18px Georgia, Serif; text-transform: uppercase; letter-spacing: 3px; }
+ 
+#quiz input {
+    vertical-align: middle;
+}
+ 
+#quiz ol {
+   margin: 0 0 10px 20px;
+}
+ 
+#quiz ol li {
+   margin: 0 0 20px 0;
+}
+ 
+#quiz ol li div {
+   padding: 4px 0;
+}
+ 
+#quiz h3 {
+   font-size: 17px; margin: 0 0 1px 0; color: #666;
+}
+ 
+#results {
+    font: 44px Georgia, Serif;
+}
+  </style>
+	
+</head>
+ 
+<body>		
+		<form action="Ex2.php" method="POST">
+		
+            <ol>
+            
+                <li>
+                
+                    <h3 name = "Q1">Who was the first president of the U.S.?</h3>
+                    
+                    <div>
+                        <input type="radio" name="question-1-answers" id="question-1-answers" value="A">
+                        <label for="question-1-answers-A" name = "correct1">A) George Washington </label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-1-answers" id="question-1-answers" value="B">
+                        <label for="question-1-answers-B">B) Abraham Lincoln</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-1-answers" id="question-1-answers" value="C">
+                        <label for="question-1-answers-C">C) Mohamed Aql</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-1-answers" id="question-1-answers" value="D">
+                        <label for="question-1-answers-D">D) None of the Above</label>
+                    </div>
+                
+                </li>
+                
+                <li>
+                
+                    <h3 name = Q2>Where is the city of Branson?</h3>
+                    
+                    <div>
+                        <input type="radio" name="question-2-answers" id="question-2-answers" value="A">
+                        <label for="question-2-answers-A">A) Kansas</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-2-answers" id="question-2-answers" value="B">
+                        <label for="question-2-answers-B">B) Ohio</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-2-answers" id="question-2-answers" value="C">
+                        <label for="question-2-answers-C" name = "correct2">C) Missouri</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-2-answers" id="question-2-answers" value="D">
+                        <label for="question-2-answers-D">D) Florida</label>
+                    </div>
+                
+                </li>
+                
+                <li>
+                
+                    <h3 name = "Q3">What language is mostly used to create basic websites?</h3>
+                    
+                    <div>
+                        <input type="radio" name="question-3-answers" id="question-3-answers" value="A">
+                        <label for="question-3-answers-A">A) JavaScript</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-3-answers" id="question-3-answers" value="B">
+                        <label for="question-3-answers-B">B) Haskell</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-3-answers" id="question-3-answers" value="C">
+                        <label for="question-3-answers-C" name = "correct3">C) HTML/CSS</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-3-answers" id="question-3-answers" value="D">
+                        <label for="question-3-answers-D">D) Python</label>
+                    </div>
+                
+                </li>
+                
+                <li>
+                
+                    <h3 name = "Q4">What is the state of Missouri's nickname?</h3>
+                    
+                    <div>
+                        <input type="radio" name="question-4-answers" id="question-4-answers" value="A">
+                        <label for="question-4-answers-A" name= "correct4">A) Show-Me state</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-4-answers" id="question-4-answers" value="B">
+                        <label for="question-4-answers-B">B) Sunflower state</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-4-answers" id="question-4-answers" value="C">
+                        <label for="question-4-answers-C">C) Silver state</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-4-answers" id="question-4-answers" value="D">
+                        <label for="question-4-answers-D">D) Beaver state</label>
+                    </div>
+                
+                </li>
+                
+                <li>
+                
+                    <h3 name = "Q5">What month and year am I graduating?</h3>
+                    
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers" value="A">
+                        <label for="question-5-answers-A">A) May 2025</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers" value="B">
+                        <label for="question-5-answers-B">B) December 2023</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers" value="C">
+                        <label for="question-5-answers-C" name = "correct5">C) May 2024</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="question-5-answers" id="question-5-answers" value="D">
+                        <label for="question-5-answers-D">D) Never</label>
+                    </div>
+                
+                </li>
+            
+            </ol>
+            
+            <input type="submit" value="Submit" class="submitbtn">
+		
+		</form>
+	
+	</div>
+</body>
+ 
+</html>

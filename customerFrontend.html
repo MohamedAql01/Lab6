@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web Store</title>
+    <link rel = "stylesheet" href = "style.css">
+  </head>
+
+  <body>
+    <form action = "customerBackend.php">
+      <script src = "formChecker.js">
+    </script>
+      <h4>Chocolate Chip Cookies</h4>
+      Quantity:<input type = "number" min = 0 id = "num1">
+      <br>Price for each: $5.99
+
+      <h4>Lawn Mower</h4>
+      Quantity:<input type = "number" min = 0 id = "num2">
+      <br>Price for each: $169.99
+
+      <h4>Mansion</h4>
+      Quantity:<input type = "number" min = 0 id= "num3">
+      <br>Price for each: $2,499,999.99
+
+      <h4>Tic-Tac</h4>
+      Quantity:<input type = "number" min = 0 id = "num4">
+      <br>Price for each: $0.99
+
+      <h4>Username: <input type = "textbox" id = "username"></h4>
+      <h4>Password: <input type = "textbox" id = "password"></h4>
+
+      <h4>Choose shipping option:</h4>
+    
+      Free 7 day<input type = "radio" id = "option1" name = "shipping">
+       
+      $50.00 Overnight<input type = "radio" id= "option2" name = "shipping">
+      
+      $5.00 three day<input type = "radio" id = "option3" name = "shipping">
+      
+      <br></br>
+      <input type = "reset" value = "Reset" id = "reset" name = "reset">
+      <input type = "button" value = Submit id = "submit" name = "submit" button onclick = "validate()">
+
+      
+    
+      
+    </form>
+  </body>
+</html>

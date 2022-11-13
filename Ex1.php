@@ -2,10 +2,12 @@
 
   <style>
     body
-    {
-      font-size: 13.5px;
-      background: lightblue;
-    } 
+      {
+        background: linear-gradient(#e66465, #9198e5);
+        width: 800px;
+        height:800px;
+        font-size: 13.5px;
+      }
   </style>
   <head>
     <title>Multiplication Table</title>

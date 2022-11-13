@@ -1,48 +1,51 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Web Store</title>
-    <link rel = "stylesheet" href = "style.css">
-  </head>
+<head>
+  <title>Web Store</title>
+  <link rel="stylesheet" href="style.css">
+  <script type='text/javascript' src="script.js"></script>
+</head>
 
-  <body>
-    <form action = "customerBackend.php">
-      <script src = "formChecker.js">
-    </script>
-      <h4>Chocolate Chip Cookies</h4>
-      Quantity:<input type = "number" min = 0 id = "num1">
-      <br>Price for each: $5.99
+<body>
+  <form action = "customerBackend.php" method = "POST">
+    <!--All number types have been defaulted to 0. If no value (or an incorrect entry) is entered, an exception is thrown and prevents the user from proceeding-->
 
-      <h4>Lawn Mower</h4>
-      Quantity:<input type = "number" min = 0 id = "num2">
-      <br>Price for each: $169.99
+    <h4>Chocolate Chip Cookies</h4>
+    Quantity:<input type="number" min=0 value=0 name="num1">
+    <br>Price for each: $5.99
 
-      <h4>Mansion</h4>
-      Quantity:<input type = "number" min = 0 id= "num3">
-      <br>Price for each: $2,499,999.99
+    <h4>Lawn Mower</h4>
+    Quantity:<input type="number" min=0 value=0 name="num2">
+    <br>Price for each: $169.99
 
-      <h4>Tic-Tac</h4>
-      Quantity:<input type = "number" min = 0 id = "num4">
-      <br>Price for each: $0.99
+    <h4>Mansion</h4>
+    Quantity:<input type="number" min=0 value=0 name="num3">
+    <br>Price for each: $2,499,999.99
 
-      <h4>Username: <input type = "textbox" id = "username"></h4>
-      <h4>Password: <input type = "textbox" id = "password"></h4>
+    <h4>Tic-Tac</h4>
+    Quantity:<input type="number" min=0 value=0 name="num4">
+    <br>Price for each: $0.99
 
-      <h4>Choose shipping option:</h4>
-    
-      Free 7 day<input type = "radio" id = "option1" name = "shipping">
-       
-      $50.00 Overnight<input type = "radio" id= "option2" name = "shipping">
-      
-      $5.00 three day<input type = "radio" id = "option3" name = "shipping">
-      
-      <br></br>
-      <input type = "reset" value = "Reset" id = "reset" name = "reset">
-      <input type = "button" value = Submit id = "submit" name = "submit" button onclick = "validate()">
+    <h4>Username: <input type="textbox" id="username" name="username"></h4>
+    <h4>Password: <input type="textbox" id="password" name="password"></h4>
 
-      
-    
-      
-    </form>
-  </body>
+    <!--Span tag added to output validation message-->
+    <span id='validation_properties'>
+      <p id='validation'></p>
+    </span>
+
+    <h4>Choose shipping option:</h4>
+
+    Free 7 day<input type="radio" id="option1" name="shipping" value="0" checked='checked'>
+
+    $50.00 Overnight<input type="radio" id="option2" name="shipping" value="50">
+
+    $5.00 three day<input type="radio" id="option3" name="shipping" value="5">
+
+    <br></br>
+    <input type="reset" value="Reset" id="reset" name="reset">
+    <button onclick="validate()" id="submit" name="submit">Submit</button>
+  </form>
+</body>
+
 </html>

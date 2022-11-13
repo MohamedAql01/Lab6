@@ -3,13 +3,19 @@
 <head>
 	
 	<title>Quiz results</title>
+  <style>
+    body
+      {
+        background: linear-gradient(#e66465, #9198e5);
+        width: 800px;
+        height:800px;
+      }
+    </style>
 	
 	
 </head>
  
 <body>
- 
- 
 		<h1>Results</h1>
 		
   <?php
@@ -38,39 +44,40 @@
     if ($answer5 == "C") { $totalCorrect++; }
     $percentage = ($totalCorrect / 5) * 100;
   
-    echo "Question 1: $Q1";
+    echo "Question 1: Who was the first president of the U.S.?";
     echo "<br>";
-    echo "Your Answer: $answer1";
+    echo "Your Answer: ".$answer1;
     echo "<br>";
-    echo "Correct Answer: $correct1";
-    echo "<br>";
-    echo "<br>";
-    echo "Question 2: $Q2";
-    echo "<br>";
-    echo "Your Answer:  $answer2";
-    echo "<br>";
-    echo "Correct Answer: $correct2";
+    echo "Correct Answer: A) George Washington ";
     echo "<br>";
     echo "<br>";
-    echo "Question 2: $Q3";
+    echo "Question 2: Where is the city of Branson?";
     echo "<br>";
-    echo "Your Answer:  $answer3";
+    echo "Your Answer: ".$answer2;
     echo "<br>";
-    echo "Correct Answer: $correct3";
-    echo "<br>";
-    echo "<br>";
-    echo "Question 2: $Q4";
-    echo "<br>";
-    echo "Your Answer:  $answer4";
-    echo "<br>";
-    echo "Correct Answer: $correct4";
+    echo "Correct Answer: C) Missouri";
     echo "<br>";
     echo "<br>";
-    echo "Question 2: $Q5";
+    echo "Question 3: What language is mostly used to create basic websites?";
     echo "<br>";
-    echo "Your Answer:  $answer5";
+    echo "Your Answer: ".$answer3;
     echo "<br>";
-    echo "Correct Answer: $correct5";
+    echo "Correct Answer: C) HTML/CSS";
+    echo "<br>";
+    echo "<br>";
+    echo "Question 4: What is the state of Missouri's nickname?";
+    echo "<br>";
+    echo "Your Answer: ".$answer4;
+    echo "<br>";
+    echo "Correct Answer: A) Show-Me state";
+    echo "<br>";
+    echo "<br>";
+    echo "Question 5: What month and year am I graduating?";
+    echo "<br>";
+    echo "Your Answer: ".$answer5;
+    echo "<br>";
+    echo "Correct Answer: C) May 2024";
+    echo "<br>";
     echo "<br>";
     echo "$totalCorrect / 5 correct";
     echo "<br>";

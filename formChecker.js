@@ -1,26 +1,42 @@
-function validate()
-  {
-    const quantity1 = document.getElementById("num1").value;
-    const quantity2 = document.getElementById("num2").value;
-    const quantity3 = document.getElementById("num3").value;
-    const quantity4 = document.getElementById("num4").value;
-    const userName = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
-    const option1 = document.getElementById("option1").value;
-    const option2 = document.getElementById("option2").value;
-    const option3 = document.getElementById("option3").value;
+function output_message(username, password) {
+  var text1 = '';
 
-    if((quantity1 == "") && (quantity2 == "") && (quantity3 == "") && (quantity4 == "") && (userName == "") && (password == ""))
-    {
-      alert("One or more fields is empty!");
-    }
-    else if ((quantity1 < 0) && (quantity2 < 0) && (quantity3 < 0) && (quantity4 < 0))
-    {
-      alert("Quantity cannot be negative");
-    }
-    else
-    {
-        //link php file
-    }
-
+  let x = document.getElementById('validation');
+  if (username_check(username) == true && password.length != 0) {
+    text1 = 'Valid credentials';
   }
+  else if (username_check(username) == true && password.length == 0) {
+    text1 = 'Password must not be left blank';
+  }
+  else if (username_check(username) == false && password.length == 0) {
+    text1 = 'Username and password is invalid';
+  }
+  else {
+    text1 = 'Username is invalid';
+  }
+
+  return text1;
+}
+
+function username_check(username) {
+  var bool = false;
+  var domain = ['gmail.com', 'hotmail.com', 'outlook.com', 'yahoo.com'];
+  var inputted_domain = (username.split('@'))[1];
+
+  for (let i = 0; i < domain.length; i++) {
+    if (inputted_domain == domain[i]) {
+      bool = true;
+      break;
+    }
+  }
+
+  return bool;
+}
+
+function validate() {
+  const username = document.getElementById("username").value;
+  const password = document.getElementById("password").value;
+
+  text = document.getElementById('validation');
+  text.textContent = output_message(username, password);
+}

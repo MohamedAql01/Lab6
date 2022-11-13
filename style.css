@@ -1,7 +1,9 @@
 body
-{
-  background-color:beige;
-}
+      {
+        background: linear-gradient(#e66465, #9198e5);
+        width: 800px;
+        height:800px;
+      }
 script
 {
   display:none;  
